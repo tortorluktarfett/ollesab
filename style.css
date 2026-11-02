@@ -8,10 +8,13 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-
+    max-width: 100dvw;
 }
 
 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -20,20 +23,24 @@ header{
     position: sticky;
     z-index: 999;
     width:100%;
-    height: 9dvh;
+    height: 5dvh;
     top: 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 150px;
     padding: 1rem;
 }
 
 header img{
-    width: 20dvw; 
-    vertical-align: middle;
+    width: 15dvw;
+    height: auto;
+    margin:5px;
+    padding:5px;
 }
 
 nav a {
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -60,36 +67,76 @@ main{
     background-image: url('bilder/backdrop.jpg');
     background-size: cover;
 }
+.backdropomoss{
+    width: 100%;                        /*backdrop bakgrund*/
+    height: 600px;
+    background-image: url('bilder/verkstad.jpg');
+    background-size: cover;    
+}
 
-article{
-    
+section{
+    display: flex;
+    align-items: center;
+    width: 98%;
     border-radius: 10px;
     outline:3px solid #ebf2fa;
     display: flex;
-    justify-content:center;                            
-    align-items:center; 
     padding:10px;
-    margin: 30px;
     background-color: white;
-    max-width: 100vw;
+    margin-inline: auto;
+    min-height: 40dvh;
+    margin-block: 20px;
+    position: relative;
+    
+}
+
+article{
+    
+    display: flex;
+    padding:10px;
+    background-color: white;
+    width: fit-content;
+    margin-inline: auto;
+    height: auto;
+    margin-block: 10px;
+    position: relative;
     
 }
 
 article img{
-    width:  30dvw;
-    height: 40dvh;
+    width: auto;
+    height: 35dvh;
     object-fit: cover;
     border-radius: 10px;
-    margin: 10px;
+    margin-inline: 30px;
 }
 
 .articletext{
-    text-align: center;
+    text-align: left;
     width:30dvw;
+    position: relative;
+    align-self: center;
 }
 
 article h1{ 
     color:#064789;
+} 
+
+label {display: block;}
+ 
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 footer{
@@ -108,7 +155,7 @@ footer p{
  
 footer img{
     vertical-align: baseline; 
-    width:2dvw;
+    width:1.2dvw;
     height: auto;
 }
 
