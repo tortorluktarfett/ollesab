@@ -18,6 +18,10 @@ p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.kontakttext{
+    line-height: 2.5;
+}
+
 header{
     background-color:white;
     position: sticky;
@@ -116,11 +120,32 @@ article img{
     width:30dvw;
     position: relative;
     align-self: center;
+    font-size: 1.2rem;
 }
 
 article h1{ 
     color:#064789;
 } 
+
+.iconarticle{
+    display: flex;
+    flex-direction: column;   /* stacks icon above text */
+    align-items: center;      /* centers both horizontally */
+    width: 30dvw;
+    text-align: center;
+}
+
+.articletexticon{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.icon{
+    width: 5rem;
+    height: auto;
+    margin-bottom: 1rem;
+    
+}
 
 label {display: block;}
  
